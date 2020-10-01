@@ -1,0 +1,163 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.colors {
+  color: #f07167;
+  color: #fed9b7;
+  color: #fdfcdc;
+  color: #00afb9;
+  color: #0081a7;
+}
+
+body {
+  color: #fdfcdc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./backg.jpg');
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+  /* border: 5px solid #0081a7; */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px 10px;
+  max-width: 460px;
+  margin: 20px auto;
+  background-color: #fed9b7;
+}
+/* .numberInput {
+  display: flex;
+  padding: 5px;
+  color: #fdfcdc;
+  border-radius: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 450px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: #f07167;
+} */
+
+.buttons {
+  font-weight: bold;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.buttons .btnNum {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fdfcdc;
+  font-size: 1.5rem;
+  background-color: #00afb9;
+
+  transition: all 500ms;
+}
+
+.buttons .btnNum:hover {
+  background-color: rgb(0, 147, 155);
+}
+
+.buttons .operators {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fdfcdc;
+  font-size: 1.5rem;
+  background-color: #0081a7;
+
+  transition: all 500ms;
+}
+
+.buttons .operators:hover {
+  background-color: rgb(0, 104, 136);
+}
+
+#btnPlus {
+  height: 214px;
+  grid-row: 3/6;
+  grid-column: 4/5;
+}
+#btnEqual {
+  width: 214px;
+  grid-row: 5/6;
+  grid-column: 3/5;
+}
+#btnMinus {
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+.numberInput input {
+  color: #fdfcdc;
+  text-align: right;
+  font-size: 3rem;
+  padding: 10px 5px;
+  background-color: #f07167;
+  border: none;
+  border-radius: 5px;
+  width: 430px;
+  height: 100px;
+  transition: all 400ms;
+  resize: none;
+}
+
+::selection {
+  color: #fdfcdc;
+  background-color: #00afb9;
+}
+
+@media (max-width: 450px) {
+  .numberInput {
+    width: 350px;
+  }
+  .buttons button {
+    width: 90px;
+    height: 90px;
+  }
+  #btnEqual {
+    width: 174px;
+  }
+  #btnPlus {
+    height: 174px;
+  }
+}
+
+@media (max-width: 400px) {
+  .numberInput {
+    width: 350px;
+  }
+  .buttons button {
+    width: 70px;
+    height: 70px;
+  }
+  #btnEqual {
+    width: 150px;
+  }
+  #btnPlus {
+    height: 174px;
+  }
+}
+@media (max-width: 350px) {
+  .numberInput {
+    width: 250px;
+  }
+  .buttons button {
+    width: 50px;
+    height: 50px;
+  }
+}
