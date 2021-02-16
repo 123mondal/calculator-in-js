@@ -1,3 +1,4 @@
+// simple calculator
 const btn7 = document.getElementById("btn7");
 const numbers = document.getElementById("numbers");
 const numberBtns = document.querySelectorAll(".btnNum");
