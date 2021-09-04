@@ -40,11 +40,8 @@ operatorBtns.forEach((btn) => {
   btn.addEventListener("click", function () {
     // numText += this.textContent;
     // numbers.value = numText;
-    if (btn.textContent === "*") {
-      ope = "X";
-    } else {
-      ope = btn.textContent;
-    }
+    ope = btn.textContent;
+    
     num1 = Number(numText);
     visuText = `${num1} ${ope}`;
     result.textContent = visuText;
