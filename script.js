@@ -42,8 +42,9 @@ operatorBtns.forEach((btn) => {
     // numbers.value = numText;
     if (btn.textContent === "*") {
       ope = "X";
+    } else {
+      ope = btn.textContent;
     }
-    ope = btn.textContent;
     num1 = Number(numText);
     visuText = `${num1} ${ope}`;
     result.textContent = visuText;
@@ -70,7 +71,7 @@ document.getElementById("btnEqual").addEventListener("click", () => {
         numText = String(res.toFixed(2));
         visuText += ` ${num2} = ${res.toFixed(2)}`;
         break;
-      case "*":
+      case "X":
         res = num1 * num2;
         numText = String(res.toFixed(2));
         visuText += ` ${num2} = ${res.toFixed(2)}`;
