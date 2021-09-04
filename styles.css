@@ -13,6 +13,8 @@ body {
   color: #fdfcdc;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  height: 100%;
   background-image: url('https://static.vecteezy.com/system/resources/previews/001/952/877/non_2x/flat-forest-landscape-with-sunset-background-free-vector.jpg');
   margin: 0;
   padding: 0;
